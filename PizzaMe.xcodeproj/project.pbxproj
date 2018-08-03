@@ -12,6 +12,7 @@
 		2BE37461211409580087AB8D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE37460211409580087AB8D /* Place.swift */; };
 		2BE37463211419D30087AB8D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE37462211419D30087AB8D /* CustomTableViewCell.swift */; };
 		2BE3746521141A190087AB8D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3746421141A190087AB8D /* CustomTableViewCell.xib */; };
+		2BE3746721149F0D0087AB8D /* DetailsAndMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE3746621149F0D0087AB8D /* DetailsAndMapViewController.swift */; };
 		2BED4F8F2113934800EDACFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED4F8E2113934800EDACFF /* AppDelegate.swift */; };
 		2BED4F912113934800EDACFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED4F902113934800EDACFF /* ViewController.swift */; };
 		2BED4F942113934800EDACFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BED4F922113934800EDACFF /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		2BE37460211409580087AB8D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		2BE37462211419D30087AB8D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2BE3746421141A190087AB8D /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		2BE3746621149F0D0087AB8D /* DetailsAndMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAndMapViewController.swift; sourceTree = "<group>"; };
 		2BED4F8B2113934800EDACFF /* PizzaMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BED4F8E2113934800EDACFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BED4F902113934800EDACFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				2BED4FC1211395DD00EDACFF /* LocationManager.swift */,
 				2BE37462211419D30087AB8D /* CustomTableViewCell.swift */,
 				2BED4FBC2113944500EDACFF /* TableTableViewController.swift */,
+				2BE3746621149F0D0087AB8D /* DetailsAndMapViewController.swift */,
 				2BED4F922113934800EDACFF /* Main.storyboard */,
 				2BE3746421141A190087AB8D /* CustomTableViewCell.xib */,
 				2BED4F902113934800EDACFF /* ViewController.swift */,
@@ -286,6 +289,7 @@
 				2BED4FC2211395DD00EDACFF /* LocationManager.swift in Sources */,
 				2BED4FBD2113944500EDACFF /* TableTableViewController.swift in Sources */,
 				2BED4F8F2113934800EDACFF /* AppDelegate.swift in Sources */,
+				2BE3746721149F0D0087AB8D /* DetailsAndMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

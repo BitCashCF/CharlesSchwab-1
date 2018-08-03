@@ -126,28 +126,16 @@ class TableTableViewController: UITableViewController {
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = placesArray[indexPath.row]
-        openMapForPlace(place: item)
+        performSegue(withIdentifier: "DetailView", sender: item)
     }
 
-    func openMapForPlace(place: Place) {
-        
-        let latitude: CLLocationDegrees = place.latitud
-        let longitude: CLLocationDegrees = place.longitud
-        
-        let address = [CNPostalAddressStreetKey: place.address, CNPostalAddressCityKey: place.city, CNPostalAddressPostalCodeKey: self.postalCode, CNPostalAddressISOCountryCodeKey: "US"]
-        
-        let regionDistance:CLLocationDistance = 10000
-        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
-        let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
-        let options = [
-            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
-            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
-        ]
-        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: address)
-        let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = place.title
-        mapItem.openInMaps(launchOptions: options)
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let item = sender as? Place else { return }
+            if (segue.identifier == "DetailView") {
+                let vc = segue.destination as? DetailsAndMapViewController
+                vc?.placeDetails = item
+                vc?.postalCode = postalCode
+            }
     }
     
     /*
