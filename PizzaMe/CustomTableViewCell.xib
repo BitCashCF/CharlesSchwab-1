@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomTableViewCell" customModule="PizzaMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqR-NV-OUh">
+                    <rect key="frame" x="15" y="10" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="9bP-bj-0mK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza place name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfe-sq-FsH">
+                    <rect key="frame" x="100" y="10" width="133.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip2-3s-WBW">
+                    <rect key="frame" x="15" y="31" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Chb-Vg-Ttr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fio-RX-ryR">
+                    <rect key="frame" x="15" y="73" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="LQg-4S-d0Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza place phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub4-mh-YhF">
+                    <rect key="frame" x="99" y="73" width="203" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOA-iH-yL2">
+                    <rect key="frame" x="15" y="94" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="JFF-zq-VJG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance to pizza place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czp-hT-1C8">
+                    <rect key="frame" x="98" y="94" width="178" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizz place address with all Strings on the same box" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgj-Cd-Ibf">
+                    <rect key="frame" x="99" y="31" width="276" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jOA-iH-yL2" secondAttribute="bottom" constant="10" id="4Xp-Nr-hnV"/>
+                <constraint firstItem="czp-hT-1C8" firstAttribute="leading" secondItem="jOA-iH-yL2" secondAttribute="trailing" constant="3" id="7wK-qo-N1W"/>
+                <constraint firstItem="fio-RX-ryR" firstAttribute="top" secondItem="ip2-3s-WBW" secondAttribute="bottom" constant="21" id="9mi-Vf-VbV"/>
+                <constraint firstItem="ub4-mh-YhF" firstAttribute="leading" secondItem="fio-RX-ryR" secondAttribute="trailing" constant="4" id="GhP-6y-vN0"/>
+                <constraint firstItem="jOA-iH-yL2" firstAttribute="top" secondItem="fio-RX-ryR" secondAttribute="bottom" id="HwB-Wz-o62"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="czp-hT-1C8" secondAttribute="bottom" constant="10" id="LPS-7F-W46"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dgj-Cd-Ibf" secondAttribute="trailing" id="StO-UQ-fJq"/>
+                <constraint firstItem="kqR-NV-OUh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Vok-9p-VVc"/>
+                <constraint firstItem="dgj-Cd-Ibf" firstAttribute="leading" secondItem="ip2-3s-WBW" secondAttribute="trailing" constant="4" id="bb9-GW-3X5"/>
+                <constraint firstItem="Sfe-sq-FsH" firstAttribute="leading" secondItem="kqR-NV-OUh" secondAttribute="trailing" constant="5" id="cHY-Vb-4oI"/>
+                <constraint firstItem="Sfe-sq-FsH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="e7E-Lx-oln"/>
+                <constraint firstItem="dgj-Cd-Ibf" firstAttribute="top" secondItem="Sfe-sq-FsH" secondAttribute="bottom" id="hVc-pP-rs3"/>
+                <constraint firstItem="jOA-iH-yL2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="kRw-qj-WIC"/>
+                <constraint firstItem="kqR-NV-OUh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="mch-Wx-Rlf"/>
+                <constraint firstItem="czp-hT-1C8" firstAttribute="top" secondItem="ub4-mh-YhF" secondAttribute="bottom" id="nDH-ar-AdS"/>
+                <constraint firstItem="ip2-3s-WBW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="xhs-N0-xd8"/>
+                <constraint firstItem="fio-RX-ryR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="zQc-AG-pzx"/>
+                <constraint firstItem="ip2-3s-WBW" firstAttribute="top" secondItem="kqR-NV-OUh" secondAttribute="bottom" id="zyn-Pd-JCN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="placeAddressLabel" destination="dgj-Cd-Ibf" id="5wr-S2-fVb"/>
+                <outlet property="placeDistanceLabel" destination="czp-hT-1C8" id="znm-Jd-NXy"/>
+                <outlet property="placeNameLabel" destination="Sfe-sq-FsH" id="yHS-xd-ihq"/>
+                <outlet property="placePhoneLabel" destination="ub4-mh-YhF" id="JGE-MT-iaB"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="-220.5"/>
+        </view>
+    </objects>
+</document>
