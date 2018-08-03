@@ -16,7 +16,6 @@ enum NetworkingError : Error {
     case other
 }
 
-//typealias EventsResult = (_ error: Error?, _ events: [Any]) -> Void
 typealias PlacesResult = (_ error: Error?, _ places: [Place]) -> Void
 
 class NetworkServiceManager {
@@ -28,12 +27,10 @@ class NetworkServiceManager {
         session = URLSession.shared
     }
     
-//    func getPlaces(zipCode: String, completion: @escaping EventsResult) {
     func getPlaces(zipCode: String, completion: @escaping PlacesResult) {
         
         let baseURL = "https://query.yahooapis.com/v1/public/yql?"
         let queryUrl = "q=select+*+from+local.search+where+zip%3D%27\(zipCode)%27+and+query%3D%27pizza%27"
-        //https://query.yahooapis.com/v1/public/yql?q=select+*+from+local.search+where+zip%3D%2794085%27+and+query%3D%27pizza%27
         
         guard let url = URL(string: baseURL + queryUrl) else {
             completion(NetworkingError.requestCreation, [])
@@ -56,28 +53,17 @@ class NetworkServiceManager {
             
             // XML Parse Decoder
             if let xmlData = XML(data: data) {
-                
                 var placesArray: [Place] = []
-                
                 for result in xmlData["results"]["Result"] {
-                    let title   = result["Title"]
-                    let address = result["Address"]
-                    let city    = result["City"]
-                    let state   = result["State"]
-                    let phone   = result["Phone"]
-                    let lat     = result["Latitude"]
-                    let lon     = result["Longitude"]
+                    let title   = result["Title"].string ?? "No Titlte"
+                    let address = result["Address"].string ?? "No Address"
+                    let city    = result["City"].string ??  "No City"
+                    let state   = result["State"].string ?? "No State"
+                    let phone   = result["Phone"].string ?? "No Phone"
+                    let lat     = result["Latitude"].double ?? 0.0
+                    let lon     = result["Longitude"].double ?? 0.0
                     
-//                    print("")
-//                    print("title   :", title.stringValue)
-//                    print("address :", address.stringValue)
-//                    print("city    :", city.stringValue)
-//                    print("state   :", state.stringValue)
-//                    print("phone   :", phone.stringValue)
-//                    print("lat     :", lat.stringValue)
-//                    print("lon     :", lon.stringValue)
-                    
-                    let place = Place(title: title.string!, address: address.string!, city: city.string!, state: state.string!, phone: phone.string!, latitud: lat.double!, longitud: lon.double!)
+                    let place = Place(title: title, address: address, city: city, state: state, phone: phone, latitud: lat, longitud: lon)
                     placesArray.append(place)
                 }
                 completion(nil, placesArray)

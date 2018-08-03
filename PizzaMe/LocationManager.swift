@@ -61,7 +61,6 @@ class LocationManager : NSObject {
             return false
         }
     }
-    
 }
 
 extension LocationManager : CLLocationManagerDelegate {
